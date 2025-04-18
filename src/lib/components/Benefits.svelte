@@ -18,7 +18,7 @@
   const benefitList: BenefitsProps[] = [
     {
       icon: "blocks",
-      title: "Build Brand Trust",
+      title: "hello",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
     },
