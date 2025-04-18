@@ -38,7 +38,7 @@
         <h3 class="font-bold text-lg">Socials</h3>
         <div><a href="https://twitch.tv" class="opacity-60 hover:opacity-100">Twitch</a></div>
         <div><a href="https://discord.com" class="opacity-60 hover:opacity-100">Discord</a></div>
-        <div><a href="https://dribbble.com" class="opacity-60 hover:opacity-100">Dribbble</a></div>
+        <div><a href="https://dribbble.com" class="opacity-60 hover:opacity-100">aaaaaaaaaaaaa</a></div>
       </div>
     </div>
 
