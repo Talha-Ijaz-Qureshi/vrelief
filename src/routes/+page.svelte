@@ -1,6 +1,8 @@
 <script>
     import Benefits from "$lib/components/Benefits.svelte";
     import Community from "$lib/components/Community.svelte";
+    import JobsApply from "$lib/components/JobsApply.svelte";
+
     import Contact from "$lib/components/Contact.svelte";
     import Faq from "$lib/components/FAQ.svelte";
     import Features from "$lib/components/Features.svelte";
@@ -25,6 +27,7 @@
 <!-- <Testimonials /> -->
 <Teams />
 <Community />
+<JobsApply />
 <!-- <Pricing /> -->
 <Contact />
 <Faq />
