@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths';
     import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
     import {
       Paintbrush,
@@ -61,7 +62,7 @@
             <CardTitle class="p-4 rounded-lg border shadow-sm bg-muted/60 dark:bg-card flex justify-center flex-col h-full">{title}</CardTitle>
 
             <a 
-              href="/"
+              href="{base}/"
               target="_blank"
               rel="noreferrer"
               class="w-full h-full"

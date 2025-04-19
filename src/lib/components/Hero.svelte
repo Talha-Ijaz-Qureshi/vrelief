@@ -118,7 +118,7 @@
             transform: translateY(0px);
         }
     }
-
+    /*
     @keyframes img-border-animation {
         from {
             @apply border-t-primary/10;
@@ -127,5 +127,5 @@
         to {
             @apply border-t-primary/60;
         }
-    }
+    } */
 </style>

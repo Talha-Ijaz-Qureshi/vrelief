@@ -11,14 +11,14 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null // or 'index.html' if using SPA fallback
+			fallback: null
 		}),
 		paths: {
 			base: dev ? '' : '/vrelief'
 		},
 		prerender: {
-			handleHttpError: 'warn', // 👈 prevents crash on 404 during build
-			entries: ['*'] // 👈 prerender all reachable routes (or specify exact pages)
+			handleHttpError: 'warn',
+			entries: ['*']
 		}
 	}
 };

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { ChevronsDown } from "lucide-svelte";
   import { Separator } from "$lib/components/ui/separator";
 </script>
@@ -7,7 +8,7 @@
   <div class="p-10 bg-muted/50 dark:bg-card border rounded-2xl">
     <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
       <div class="col-span-full xl:col-span-2">
-        <a href="/" class="flex font-bold items-center">
+        <a href="{base}/" class="flex font-bold items-center">
           <ChevronsDown class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
           <h3 class="text-2xl">Shadcn-Svelte</h3>
         </a>
