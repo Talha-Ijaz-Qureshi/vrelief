@@ -58,8 +58,8 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {#each featureList as { icon, title, description }}
         <Card class="h-full bg-background rounded-lg border-0 shadow-sm py-4">
-          <Button class="flex flex-col items-center justify-center h-full w-full">
-            <CardTitle class="p-4 rounded-lg border shadow-sm bg-muted/60 dark:bg-card flex justify-center flex-col h-full">{title}</CardTitle>
+          <Button class="flex flex-col items-center justify-center h-full w-full px-0.5 pt-0.5 rounded-lg">
+            <CardTitle class="p-4 rounded-lg border shadow-sm bg-muted/60 dark:bg-card flex justify-center flex-col h-full w-full">{title}</CardTitle>
 
             <a 
               href="{base}/"
