@@ -17,15 +17,15 @@
 
 <Navbar />
 <Hero />
-<Sponsors />
+<!-- <Sponsors /> -->
 <Benefits />
 <Features />
 <Services />
-<HowItWorks />
-<Testimonials />
+<!-- <HowItWorks /> -->
+<!-- <Testimonials /> -->
 <Teams />
 <Community />
-<Pricing />
+<!-- <Pricing /> -->
 <Contact />
 <Faq />
 <Footer />

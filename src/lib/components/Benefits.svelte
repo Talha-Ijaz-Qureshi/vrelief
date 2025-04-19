@@ -57,7 +57,7 @@
     <div>
       <h2 class="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        Your Shortcut to Success
+        How VR Therapy Can Help You
       </h2>
       <p class="text-xl text-muted-foreground mb-8">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
