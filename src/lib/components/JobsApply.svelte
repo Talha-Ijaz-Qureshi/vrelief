@@ -20,7 +20,7 @@
           <CardHeader>
             <CardTitle class="text-4xl md:text-5xl font-bold">
               <DiscordIcon class="w-20 h-20 m-auto mb-4" />
-              Join The Company @
+              Work With Us @
               <span class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
                 VRelief
               </span>

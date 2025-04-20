@@ -5,11 +5,11 @@
     import { mode } from "mode-watcher";
     import { onMount } from 'svelte';
 
-    let imageSrc = 'hero-image-light.jpg';
+    let imageSrc = 'vr.png';
     
     onMount(() => {
         mode.subscribe(currentMode => {
-            imageSrc = currentMode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.jpg';
+            imageSrc = currentMode === 'dark' ? 'vr.png' : 'vr.png';
         });
     });
 
@@ -118,7 +118,7 @@
             transform: translateY(0px);
         }
     }
-    /*
+    
     @keyframes img-border-animation {
         from {
             @apply border-t-primary/10;
@@ -127,5 +127,5 @@
         to {
             @apply border-t-primary/60;
         }
-    } */
+    }
 </style>
