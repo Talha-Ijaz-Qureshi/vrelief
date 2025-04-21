@@ -1,7 +1,16 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import { ChevronsDown } from "lucide-svelte";
   import { Separator } from "$lib/components/ui/separator";
+  import { mode } from "mode-watcher";
+    import { onMount } from 'svelte';
+
+    let imageSrc = 'vrdark.png';
+    
+    onMount(() => {
+        mode.subscribe(currentMode => {
+            imageSrc = currentMode === 'dark' ? 'vrdark.png' : 'vrlight.png';
+        });
+    });
 </script>
 
 <footer id="footer" class="container py-24 pb-16 sm:py-32 sm:pb-24">
@@ -9,8 +18,12 @@
     <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
       <div class="col-span-full xl:col-span-2">
         <a href="{base}/" class="flex font-bold items-center">
-          <ChevronsDown class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-          <h3 class="text-2xl">Shadcn-Svelte</h3>
+          <img
+          class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-16 h-16 mr-2 border-2 text-white"
+          src={imageSrc}
+          alt="VRelief-logo"
+          />
+          <h3 class="text-2xl">VRelief</h3>
         </a>
       </div>
 

@@ -19,6 +19,16 @@
   import { ChevronsDown, Menu } from "lucide-svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import ToggleTheme from "$lib/components/ToggleTheme.svelte";
+  import { mode } from "mode-watcher";
+    import { onMount } from 'svelte';
+
+    let imageSrc = 'vrdark.png';
+    
+    onMount(() => {
+        mode.subscribe(currentMode => {
+            imageSrc = currentMode === 'dark' ? 'vrdark.png' : 'vrlight.png';
+        });
+    });
 
   interface RouteProps {
     href: string;
@@ -32,6 +42,7 @@
 
   const routeList: RouteProps[] = [
     // { href: "#testimonials", label: "Testimonials" },
+    { href: "#features", label: "Features" },
     { href: "#team", label: "Team" },
     { href: "#contact", label: "Contact" },
     { href: "#faq", label: "FAQ" },
@@ -56,11 +67,17 @@
 </script>
 
 <header
-  class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md dark:shadow-dark shadow-light"
+  class="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card/50 backdrop-blur-md shadow-md dark:shadow-dark shadow-light"
 >
   <a href="{base}/" class="font-bold text-lg flex items-center">
-    <ChevronsDown class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-    ShadcnSvelte
+    <img
+      class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-10 h-10 mr-2 border-2 text-white"
+      src={imageSrc}
+      alt="VRelief-logo"
+    />
+
+
+    VRelief
   </a>
 
   <!-- Mobile -->
@@ -70,13 +87,17 @@
         <Menu on:click={() => (isOpen = true)} class="cursor-pointer" />
       </SheetTrigger>
 
-      <SheetContent side="left" class="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card">
+      <SheetContent side="right" class="flex flex-col justify-between rounded-tl-2xl rounded-bl-2xl bg-card">
         <div>
           <SheetHeader class="mb-4 ml-4">
             <SheetTitle class="flex items-center">
               <a href="{base}/" class="flex items-center">
-                <ChevronsDown class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white" />
-                ShadcnSvelte
+                <img
+                class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-10 h-10 mr-2 border-2 text-white"
+                src={imageSrc}
+                alt="VRelief-logo"
+              />
+                          VRelief
               </a>
             </SheetTitle>
           </SheetHeader>
@@ -84,7 +105,7 @@
           <div class="flex flex-col gap-2">
             {#each routeList as { href, label }}
               <a on:click={() => (isOpen = false)} {href}>
-                <Button variant="ghost" class="justify-start text-base w-full">
+                <Button variant="ghost" class="justify-start text-base w-full underline">
                   {label}
                 </Button>
               </a>
@@ -100,7 +121,7 @@
     </Sheet>
   </div>
   <div class="hidden lg:flex items-center gap-1">
-    <DropdownMenu>
+    <!-- <DropdownMenu>
       <DropdownMenuTrigger class={`${buttonVariants({ variant: "ghost", size: "default" })} text-base`}>
        Features
       </DropdownMenuTrigger>
@@ -127,7 +148,7 @@
           </ul>
         </div>
       </DropdownMenuContent>
-    </DropdownMenu>
+    </DropdownMenu> -->
 
     <!-- Navigation Links -->
     {#each routeList as { href, label }}

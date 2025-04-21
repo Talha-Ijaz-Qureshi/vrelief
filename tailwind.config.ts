@@ -15,6 +15,9 @@ const config: Config = {
 			}
 		},
 		extend: {
+			transitionTimingFunction: {
+				'custom': 'cubic-bezier(0.2, 0, 0.001, 1)',
+			  },
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
@@ -82,6 +85,7 @@ const config: Config = {
 					"0%,70%,100%": { opacity: "1" },
 					"20%,50%": { opacity: "0" },
 				},
+				
 			},
 			animation: {
         		"accordion-down": "accordion-down 0.2s ease-out",

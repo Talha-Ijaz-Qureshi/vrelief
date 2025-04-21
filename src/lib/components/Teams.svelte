@@ -149,9 +149,9 @@
   </div>
   <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 justify-center"> -->
 
-  <div class="flex gap-10 flex-wrap justify-center">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 justify-center items-center">
     {#each teamList as { imageUrl, firstName, lastName, positions, socialNetworks }}
-      <Card class="bg-muted/60 dark:bg-card flex w-[18em] flex-col h-[30em] overflow-hidden group/hoverimg">
+      <Card class="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg">
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">
             <img

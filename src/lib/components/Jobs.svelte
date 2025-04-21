@@ -55,11 +55,11 @@
     };
   </script>
   
-  <section id="features" class="container py-2 sm:py-10 ">
+  <section id="features" class="container py-2 sm:py-10 px-0">
   
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-full lg:w-[100%] mx-auto">
       {#each featureList as { icon, title, description }}
-        <Card class="h-full p-4  rounded-lg border shadow-sm bg-muted/60 dark:bg-card flex justify-start flex-col w-full py-4">
+        <Card class=" p-4  rounded-lg border shadow-sm bg-muted/60 dark:bg-card flex justify-start flex-col h-full py-4">
           <CardTitle class="text-left pt-4">{title}</CardTitle>
 
           <CardContent class="text-muted-foreground text-left p-3">
