@@ -51,7 +51,7 @@
 		</SheetPrimitive.Close>
 	</SheetPrimitive.Content>
 </SheetPrimitive.Portal>
-
+<div class="custom-transition hidden"></div>
 <style>	
 	.custom-transition {
  		 transition-timing-function: cubic-bezier(0.2, 0, 0.001, 1);
