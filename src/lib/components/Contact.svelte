@@ -20,7 +20,7 @@
     firstName: "",
     lastName: "",
     email: "",
-    subject: "Web Development",
+    subject: "",
     message: "",
   };
 

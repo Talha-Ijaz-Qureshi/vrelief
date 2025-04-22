@@ -158,9 +158,9 @@
     {/each}
   </div>
 
-  <div class="hidden lg:flex">
+  <div class="hidden lg:flex pl-12">
     <ToggleTheme />
-    <Button size="sm" variant="ghost" aria-label="View on GitHub">
+    <!-- <Button size="sm" variant="ghost" aria-label="View on GitHub">
       <a
         aria-label="View on GitHub"
         href="https://github.com/zxce3/shadcn-sveltekit-landing-page.git"
@@ -168,7 +168,7 @@
       >
         <GithubIcon class_="size-5" />
       </a>
-    </Button>
+    </Button> -->
   </div>
 </header>
 

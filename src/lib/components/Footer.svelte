@@ -50,7 +50,7 @@
 
       <div class="flex flex-col gap-2">
         <h3 class="font-bold text-lg">Socials</h3>
-        <div><a href="https://twitch.tv" class="opacity-60 hover:opacity-100">LinkedIn</a></div>
+        <div><a href="https://www.linkedin.com/company/v-relief/" class="opacity-60 hover:opacity-100">LinkedIn</a></div>
         <div><a href="https://discord.com" class="opacity-60 hover:opacity-100">Instagram</a></div>
         <div><a href="https://dribbble.com" class="opacity-60 hover:opacity-100">Github</a></div>
       </div>
@@ -60,15 +60,16 @@
     
     <section>
       <h3>
-        &copy; 2025 Designed and developed by
         <a
-          target="_blank"
-          href="https://github.com/leoMirandaa"
-          class="text-primary transition-all border-primary hover:border-b-2"
-          rel="noreferrer"
-        >
-          VRelief
-        </a>
+        target="_blank"
+        href="https://github.com/leoMirandaa"
+        class="text-primary transition-all border-primary hover:border-b-2"
+        rel="noreferrer"
+      >
+        VRelief
+      </a>
+
+        &copy; 2025
       </h3>
     </section>
   </div>
