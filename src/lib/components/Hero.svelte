@@ -9,7 +9,7 @@
     
     onMount(() => {
         mode.subscribe(currentMode => {
-            imageSrc = currentMode === 'dark' ? 'vr.png' : 'vr.png';
+            imageSrc = currentMode === 'dark' ? 'dr4.png' : 'dr5.png';
         });
     });
 
