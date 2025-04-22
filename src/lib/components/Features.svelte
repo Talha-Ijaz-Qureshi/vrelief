@@ -21,39 +21,39 @@
   const featureList: FeaturesProps[] = [
     {
       icon: "tabletSmartphone",
-      title: "Mobile Friendly",
+      title: "Tapping a Vast Market",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+        "Our VR therapy targets ADHD, PTSD, and aviophobia, addressing a 400M+ global market with clinically validated potential.",
     },
     {
       icon: "badgeCheck",
-      title: "Social Proof",
+      title: "Precision-Crafted Scenarios",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+        "Expert-designed, immersive experiences deliver tailored, evidence-based therapy for specific disorders.",
     },
     {
       icon: "goal",
-      title: "Targeted Content",
+      title: "Accessible Beta Program",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+        "Affordable VR sets and intuitive tutorials enable at-home therapy, with our beta program inviting early users to shape the future.",
     },
     {
       icon: "pictureInPicture",
-      title: "Strong Visuals",
+      title: "Scalable Reach",
       description:
-        "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+        "Phone-based platform ensures rapid, cost-effective access, poised to empower millions with mental health support.",
     },
     {
       icon: "mousePointerClick",
-      title: "Clear CTA",
+      title: "Empowering Users",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+        "Our direct-to-consumer model prioritizes user access, breaking free from clinician-only constraints to drive engagement.",
     },
     {
       icon: "newspaper",
-      title: "Clear Headline",
+      title: "Innovative Horizon",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+        "AI and biofeedback-ready tech, targeting a 15% efficacy boost, positions us for long-term leadership in VR therapy.",
     },
   ];
 
@@ -79,9 +79,7 @@
   </h2>
 
   <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-    fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-    facere tenetur.
+    At VRelief, we’re redefining mental health care with affordable, immersive VR therapy. Discover how our consumer-first approach and cutting-edge technology set us apart in delivering accessible, effective solutions.
   </h3>
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

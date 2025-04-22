@@ -20,12 +20,12 @@
         class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
         <div class="text-center space-y-8">
-            <Badge variant="outline" class="text-sm py-2">
+            <!-- <Badge variant="outline" class="text-sm py-2">
                 <span class="mr-2 text-primary">
                     <Badge>New</Badge>
                 </span>
                 <span>Design is out now!</span>
-            </Badge>
+            </Badge> -->
 
             <div
                 class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
@@ -54,7 +54,7 @@
 
             <div class="space-y-4 md:space-y-0 md:space-x-4">
                 <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
-                    Join Our Beta Program
+                    Beta Program
                     <ArrowRight
                         class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
                     />
@@ -66,7 +66,7 @@
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Release Notes
+                        Connect With Us
                     </a>
                 </Button>
             </div>

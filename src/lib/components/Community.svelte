@@ -25,7 +25,7 @@
           </CardTitle>
         </CardHeader>
         <CardContent class="lg:w-[80%] text-xl text-muted-foreground">
-          rahhh substitles
+          Dive into the future of mental wellness! Join VRelief’s beta program to test our groundbreaking VR therapy and help us craft a more accessible path to healing.
         </CardContent>
           
         <CardFooter>

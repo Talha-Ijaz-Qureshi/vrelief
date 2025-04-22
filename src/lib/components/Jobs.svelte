@@ -27,19 +27,19 @@
         icon: "tabletSmartphone",
         title: "Developer",
         description:
-          "Create VR scenarios and get behind the development at VRelief",
+          "Build our innovative VR therapy platform, creating immersive, user-friendly scenarios for mental wellness. Work with therapists to implement clinically precise designs, optimize for phone-based VR, and enhance beta program functionality, driving accessible care in a pre-launch startup.",
       },
       {
         icon: "badgeCheck",
         title: "Therapist",
         description:
-          "Create scenarios curated to specific conditions",
+          "Shape our VR therapy platform by designing evidence-based scenarios for mental wellness. Collaborate with developers to ensure clinical accuracy, validate content, and analyze beta feedback, driving impactful, accessible care in a pre-launch startup.",
       },
       {
         icon: "goal",
-        title: "Etc",
+        title: "UX Researcher",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+          "Enhance our VR therapy platform by studying user needs and behaviors. Conduct usability tests, analyze beta feedback, and collaborate with therapists to create intuitive, impactful experiences, shaping accessible mental health care in a pre-launch startup.",
       },
     ];
   

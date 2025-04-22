@@ -54,25 +54,24 @@
         <h2 class="text-3xl md:text-4xl font-bold">Connect With Us</h2>
       </div>
       <p class="mb-8 text-muted-foreground lg:w-5/6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-        ipsam sint enim exercitationem ex autem corrupti quas tenetur
+        Discover VRelief's innovative VR therapy solutions. Connect with our team to learn more—we’re eager to assist you in transforming mental health care.
       </p>
-
+<!--  -->
       <div class="flex flex-col gap-4">
-        <div>
+        <!-- <div>
           <div class="flex gap-2 mb-1">
             <Building2 />
             <div class="font-bold">Find Us</div>
           </div>
           <div>742 Evergreen Terrace, Springfield, IL 62704</div>
-        </div>
+        </div> -->
 
         <div>
           <div class="flex gap-2 mb-1">
             <Phone />
             <div class="font-bold">Call Us</div>
           </div>
-          <div>+1 (619) 123-4567</div>
+          <div>+971 50 700 7757</div>
         </div>
 
         <div>
@@ -80,10 +79,10 @@
             <Mail />
             <div class="font-bold">Mail Us</div>
           </div>
-          <div>leomirandadev@gmail.com</div>
+          <div>thevrelief@gmail.com</div>
         </div>
 
-        <div>
+        <!-- <div>
           <div class="flex gap-2 mb-1">
             <Clock />
             <div class="font-bold">Visit Us</div>
@@ -92,7 +91,7 @@
             <div>Monday - Friday</div>
             <div>8AM - 4PM</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
