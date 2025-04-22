@@ -74,7 +74,7 @@
 
         <div class="relative group mt-14">
             <div
-                class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/50 blur-3xl rounded-full img-shadow-animation"
+                class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/75 blur-3xl rounded-full img-shadow-animation"
             ></div>
 
             <img
@@ -94,23 +94,26 @@
     .img-shadow-animation {
         animation-name: img-shadow-animation;
         animation-iteration-count: infinite;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-timing-function: linear;
         animation-direction: alternate;
+        -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.001, 1);
     }
 
     .img-border-animation {
         animation-name: img-border-animation;
         animation-iteration-count: infinite;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-timing-function: linear;
         animation-direction: alternate;
+        -moz-animation-timing-function: cubic-bezier(0.2, 0, 0.001, 1);
+
     }
 
     @keyframes img-shadow-animation {
         from {
-            opacity: 0.5;
-            transform: translateY(30px);
+            opacity: 0.75;
+            transform: translateY(20px);
         }
 
         to {
