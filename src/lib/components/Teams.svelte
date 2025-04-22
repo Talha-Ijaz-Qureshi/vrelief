@@ -27,9 +27,9 @@
   const teamList: TeamProps[] = [
     {
     imageUrl: "https://i.pravatar.cc/250?img=58",
-    firstName: "Leo",
-    lastName: "Miranda",
-    positions: ["Vue Fronted Developer", "Creator Of This Website"],
+    firstName: "Saleh",
+    lastName: "Khan",
+    positions: ["Founder & Chief Executive Officer at VRelief"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -48,9 +48,9 @@
   {
     imageUrl:
       "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Elizabeth",
-    lastName: "Moore",
-    positions: ["UI/UX Designer"],
+    firstName: "Rishabh",
+    lastName: "Johary",
+    positions: ["Chief Operating Officer at VRelief"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -65,9 +65,9 @@
   {
     imageUrl:
       "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "David",
-    lastName: "Diaz",
-    positions: ["Machine Learning Engineer", "TensorFlow Tinkerer"],
+    firstName: "Talha",
+    lastName: "Ijaz",
+    positions: ["Chief Technical Officer at VRelief"],
     socialNetworks: [
       {
         name: "LinkedIn",

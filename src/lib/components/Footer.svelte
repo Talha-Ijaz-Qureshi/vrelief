@@ -14,18 +14,18 @@
         </a>
       </div>
 
-      <div class="flex flex-col gap-2">
+      <!-- <div class="flex flex-col gap-2">
         <h3 class="font-bold text-lg">Contact</h3>
-        <div><a href="https://github.com" class="opacity-60 hover:opacity-100">Github</a></div>
-        <div><a href="https://twitter.com" class="opacity-60 hover:opacity-100">Twitter</a></div>
+        <div><a href="https://github.com" class="opacity-60 hover:opacity-100">LinkedIn</a></div>
+        <div><a href="https://twitter.com" class="opacity-60 hover:opacity-100">X (Twitter)</a></div>
         <div><a href="https://instagram.com" class="opacity-60 hover:opacity-100">Instagram</a></div>
-      </div>
+      </div> -->
 
       <div class="flex flex-col gap-2">
         <h3 class="font-bold text-lg">Platforms</h3>
         <div><span class="opacity-60 hover:opacity-100 cursor-default">iOS</span></div>
         <div><span class="opacity-60 hover:opacity-100 cursor-default">Android</span></div>
-        <div><span class="opacity-60 hover:opacity-100 cursor-default">Web</span></div>
+        <!-- <div><span class="opacity-60 hover:opacity-100 cursor-default">Web</span></div> -->
       </div>
 
       <div class="flex flex-col gap-2">
@@ -37,9 +37,9 @@
 
       <div class="flex flex-col gap-2">
         <h3 class="font-bold text-lg">Socials</h3>
-        <div><a href="https://twitch.tv" class="opacity-60 hover:opacity-100">Twitch</a></div>
-        <div><a href="https://discord.com" class="opacity-60 hover:opacity-100">Discord</a></div>
-        <div><a href="https://dribbble.com" class="opacity-60 hover:opacity-100">aaaaaaaaaaaaa</a></div>
+        <div><a href="https://twitch.tv" class="opacity-60 hover:opacity-100">LinkedIn</a></div>
+        <div><a href="https://discord.com" class="opacity-60 hover:opacity-100">Instagram</a></div>
+        <div><a href="https://dribbble.com" class="opacity-60 hover:opacity-100">Github</a></div>
       </div>
     </div>
 
@@ -47,14 +47,14 @@
     
     <section>
       <h3>
-        &copy; 2024 Designed and developed by
+        &copy; 2025 Designed and developed by
         <a
           target="_blank"
           href="https://github.com/leoMirandaa"
           class="text-primary transition-all border-primary hover:border-b-2"
           rel="noreferrer"
         >
-          Leo Miranda
+          VRelief
         </a>
       </h3>
     </section>

@@ -18,27 +18,27 @@
   const benefitList: BenefitsProps[] = [
     {
       icon: "blocks",
-      title: "hello",
+      title: "Immersive & Engaging",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+        "VR creates a sense of presence, making therapy more engaging and effective than traditional methods. ",
     },
     {
       icon: "lineChart",
-      title: "More Leads",
+      title: "Controlled Environment",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+        "Patients can confront fears and practice coping strategies in a safe, controlled setting. ",
     },
     {
       icon: "wallet",
-      title: "Higher Conversions",
+      title: "Scalable and Accessible",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+        "VR therapy can be delivered at home or in clinics, reducing barriers to access.",
     },
     {
       icon: "sparkle",
-      title: "Test Marketing Ideas",
+      title: "Cost-Effective",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+        "VR therapy reduces the need for in-person sessions, lowering costs for patients and providers.",
     },
   ];
 
@@ -60,9 +60,7 @@
         How VR Therapy Can Help You
       </h2>
       <p class="text-xl text-muted-foreground mb-8">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
-        reprehenderit architecto rerum similique facere odit deleniti
-        necessitatibus quo quae.
+        Step into transformative mental wellness with VRelief’s VR therapy. Our immersive, evidence-based approach empowers you to overcome challenges, build resilience, and access effective care from the comfort of home.
       </p>
     </div>
 

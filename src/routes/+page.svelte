@@ -22,7 +22,7 @@
 <!-- <Sponsors /> -->
 <Benefits />
 <Features />
-<Services />
+<!-- <Services /> -->
 <!-- <HowItWorks /> -->
 <!-- <Testimonials /> -->
 <Teams />
