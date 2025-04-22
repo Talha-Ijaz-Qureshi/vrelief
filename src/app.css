@@ -32,6 +32,10 @@
     --sidebar-accent-foreground: 0 0% 9%;
     --sidebar-border: 0 0% 89.8%;
     --sidebar-ring: 280 100% 63%;
+    ::selection {
+      background-color: hsl(var(--primary));
+      color: hsl(0, 0%, 100%);
+    }
   }
 
   .dark {
@@ -62,6 +66,10 @@
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 14.9%;
     --sidebar-ring: 276 70% 53%;
+    ::selection {
+      background-color: hsl(var(--primary));
+      color: hsl(0, 0%, 0%);
+    }
   }
 }
 html {

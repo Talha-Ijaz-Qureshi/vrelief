@@ -71,7 +71,10 @@
             <Phone />
             <div class="font-bold">Call Us</div>
           </div>
-          <div>+971 50 700 7757</div>
+          <div>
+            <a href="tel:+971507007757" class="text underline hover:text-primary">
+              +971 50 700 7757
+          </div>
         </div>
 
         <div>
@@ -79,7 +82,11 @@
             <Mail />
             <div class="font-bold">Mail Us</div>
           </div>
-          <div>thevrelief@gmail.com</div>
+          <div>
+            <a href="mailto:thevrelief@gmail.com" class="text hover:text-primary">
+              thevrelief@gmail.com
+            </a>
+          </div>
         </div>
 
         <!-- <div>
@@ -106,7 +113,7 @@
               <Input
                 id="firstName"
                 type="text"
-                placeholder="Leopoldo"
+                placeholder=""
                 bind:value={contactForm.firstName}
               />
             </div>
@@ -116,7 +123,7 @@
               <Input
                 id="lastName"
                 type="text"
-                placeholder="Miranda"
+                placeholder=""
                 bind:value={contactForm.lastName}
               />
             </div>
@@ -127,12 +134,21 @@
             <Input
               id="contactEmail"
               type="email"
-              placeholder="leomirandadev@gmail.com"
+              placeholder="your@email.com"
               bind:value={contactForm.email}
             />
           </div>
-
           <div class="flex flex-col gap-1.5">
+            <Label for="contactSubject">Subject</Label>
+            <Input
+              id="contactSubject"
+              type="text"
+              placeholder="Your subject..."
+              bind:value={contactForm.subject}
+            />
+          </div>
+
+          <!-- <div class="flex flex-col gap-1.5">
             <Label for="contactSubject">Subject</Label>
             <Select.Root type="single" bind:value={contactForm.subject}>
               <Select.Trigger id="contactSubject" class="w-full">
@@ -148,7 +164,7 @@
                 </Select.Group>
               </Select.Content>
             </Select.Root>
-          </div>
+          </div> -->
 
           <div class="flex flex-col gap-1.5">
             <Label for="contactMessage">Message</Label>

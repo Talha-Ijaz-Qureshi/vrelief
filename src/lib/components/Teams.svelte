@@ -6,10 +6,14 @@
     CardTitle,
     CardFooter,
   } from "$lib/components/ui/card";
+  import {
+    Mail,
 
+  } from "lucide-svelte";
+  import Icon from "@iconify/svelte";  
   import LinkedInIcon from "$lib/icons/LinkedInIcon.svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
-  import XIcon from "$lib/icons/XIcon.svelte";
+  import Instagram from "$lib/icons/XIcon.svelte";
 
   interface TeamProps {
     imageUrl: string;
@@ -20,7 +24,7 @@
   }
 
   interface SocialNetworkProps {
-    name: 'LinkedIn' | 'Github' | 'X';
+    name: string;
     url: string;
   }
 
@@ -32,16 +36,16 @@
     positions: ["Founder & Chief Executive Officer @ VRelief"],
     socialNetworks: [
       {
-        name: "LinkedIn",
+        name: "cib:linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
       {
-        name: "Github",
-        url: "https://github.com/leoMirandaa",
+        name: "cib:instagram",
+        url: "https://x.com/leo_mirand4",
       },
       {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
+        name: "tdesign:mail-filled",
+        url: "https://github.com/leoMirandaa",
       },
     ],
   },
@@ -53,11 +57,15 @@
     positions: ["Chief Technical Officer @ VRelief"],
     socialNetworks: [
       {
-        name: "LinkedIn",
+        name: "cib:linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
       {
-        name: "Github",
+        name: "cib:github",
+        url: "https://github.com/leoMirandaa",
+      },
+      {
+        name: "tdesign:mail-filled",
         url: "https://github.com/leoMirandaa",
       },
     ],
@@ -71,12 +79,16 @@
     positions: ["Chief Operating Officer @ VRelief"],
     socialNetworks: [
       {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        name: "cib:linkedin",
+        url: "https://www.linkedin.com/in/rishabh-johary-753962276/",
       },
       {
-        name: "X",
+        name: "cib:instagram",
         url: "https://x.com/leo_mirand4",
+      },
+      {
+        name: "tdesign:mail-filled",
+        url: "https://github.com/leoMirandaa",
       },
     ],
   },
@@ -133,11 +145,6 @@
   // },
 ];
 
-  const socialIconMap = {
-    LinkedIn: LinkedInIcon,
-    Github: GithubIcon,
-    X: XIcon,
-  };
 </script>
 
 <section id="team" class="container max-w-7xl mx-auto px-4 py-16 sm:py-24 lg:py-32">
@@ -158,7 +165,7 @@
             <img
               src={imageUrl}
               alt={`${firstName} ${lastName}`}
-              class="w-full aspect-square object-cover saturate-0 transition-all duration-300 ease-in-out group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-105"
+              class="w-full aspect-square object-cover saturate-0 transition-all duration-300 ease-out group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-105"
             />
           </div>
           <CardTitle class="p-4 sm:p-6">
@@ -183,7 +190,7 @@
               class="hover:opacity-80 transition-opacity"
               aria-label="Visit our {name} page"
             >
-              <svelte:component this={socialIconMap[name]} />
+            <Icon icon={name} width="24" height="24px"  style="color: #1c1c1c" />
             </a>
           {/each}
         </CardFooter>

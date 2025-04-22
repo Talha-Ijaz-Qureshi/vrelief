@@ -1,41 +1,42 @@
 <script lang="ts">
   import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
   import {
-    Sparkle,
+    BadgePercent,
     Tag,
     Paintbrush,
     Blocks,
-    LineChart,
-    Wallet,
+    Sprout,
+    ChartNoAxesCombined,
+    Boxes
   } from "lucide-svelte";
 
   interface BenefitsProps {
-    icon: 'sparkle' | 'tag' | 'paintbrush' | 'blocks' | 'lineChart' | 'wallet';
+    icon: 'BadgePercent' | 'tag' | 'paintbrush' | 'boxes' | 'sprout' | 'ChartNoAxesCombined';
     title: string;
     description: string;
   }
 
   const benefitList: BenefitsProps[] = [
     {
-      icon: "blocks",
+      icon: "boxes",
       title: "Immersive & Engaging",
       description:
         "VR creates a sense of presence, making therapy more engaging and effective than traditional methods. ",
     },
     {
-      icon: "lineChart",
+      icon: "sprout",
       title: "Controlled Environment",
       description:
         "Patients can confront fears and practice coping strategies in a safe, controlled setting. ",
     },
     {
-      icon: "wallet",
+      icon: "ChartNoAxesCombined",
       title: "Scalable and Accessible",
       description:
         "VR therapy can be delivered at home or in clinics, reducing barriers to access.",
     },
     {
-      icon: "sparkle",
+      icon: "BadgePercent",
       title: "Cost-Effective",
       description:
         "VR therapy reduces the need for in-person sessions, lowering costs for patients and providers.",
@@ -43,12 +44,12 @@
   ];
 
   const iconMap = {
-    sparkle: Sparkle,
+    BadgePercent: BadgePercent,
     tag: Tag,
     paintbrush: Paintbrush,
-    blocks: Blocks,
-    lineChart: LineChart,
-    wallet: Wallet,
+    boxes: Boxes,
+    sprout: Sprout,
+    ChartNoAxesCombined: ChartNoAxesCombined,
   };
 </script>
 

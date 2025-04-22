@@ -5,15 +5,15 @@
     MessageCircle,
     TabletSmartphone,
     BadgeCheck,
-    Goal,
+    FolderCode,
     PictureInPicture,
     MousePointerClick,
-    Newspaper,
+    BrainCog,
   } from "lucide-svelte";
 
   interface FeaturesProps {
-    icon: 'tabletSmartphone' | 'badgeCheck' | 'goal' | 'pictureInPicture' | 
-          'paintbrush' | 'mousePointerClick' | 'messageCircle' | 'newspaper';
+    icon: 'tabletSmartphone' | 'badgeCheck' | 'FolderCode' | 'pictureInPicture' | 
+          'paintbrush' | 'mousePointerClick' | 'messageCircle' | 'BrainCog';
     title: string;
     description: string;
   }
@@ -23,7 +23,7 @@
       icon: "tabletSmartphone",
       title: "Tapping a Vast Market",
       description:
-        "Our VR therapy targets ADHD, PTSD, and aviophobia, addressing a 400M+ global market with clinically validated potential.",
+        "Our VR therapy targets various conditions like ADHD, Anxiety and more, addressing a 400M+ global market with clinically validated potential.",
     },
     {
       icon: "badgeCheck",
@@ -32,13 +32,13 @@
         "Expert-designed, immersive experiences deliver tailored, evidence-based therapy for specific disorders.",
     },
     {
-      icon: "goal",
+      icon: "FolderCode",
       title: "Accessible Beta Program",
       description:
-        "Affordable VR sets and intuitive tutorials enable at-home therapy, with our beta program inviting early users to shape the future.",
+        "Affordable VR programs and intuitive tutorials enable at-home therapy, with our beta program inviting early users to shape the future.",
     },
     {
-      icon: "pictureInPicture",
+      icon: "tabletSmartphone",
       title: "Scalable Reach",
       description:
         "Phone-based platform ensures rapid, cost-effective access, poised to empower millions with mental health support.",
@@ -50,7 +50,7 @@
         "Our direct-to-consumer model prioritizes user access, breaking free from clinician-only constraints to drive engagement.",
     },
     {
-      icon: "newspaper",
+      icon: "BrainCog",
       title: "Innovative Horizon",
       description:
         "AI and biofeedback-ready tech, targeting a 15% efficacy boost, positions us for long-term leadership in VR therapy.",
@@ -60,12 +60,12 @@
   const iconMap = {
     tabletSmartphone: TabletSmartphone,
     badgeCheck: BadgeCheck,
-    goal: Goal,
+    FolderCode: FolderCode,
     pictureInPicture: PictureInPicture,
     paintbrush: Paintbrush,
     mousePointerClick: MousePointerClick,
     messageCircle: MessageCircle,
-    newspaper: Newspaper,
+    BrainCog: BrainCog,
   };
 </script>
 

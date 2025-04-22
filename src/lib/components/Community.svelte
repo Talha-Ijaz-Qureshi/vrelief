@@ -10,11 +10,13 @@
   import DiscordIcon from "$lib/icons/DiscordIcon.svelte";
 </script>
 
-<section id="community" class="py-12">
+<section id="community" class="py-0 grad border-0 flex justify-center align-middle">
   <hr />
-  <div class="container py-20 sm:py-20">
-    <div class="lg:w-[60%] mx-auto">
-      <Card class="bg-background shadow-none text-center flex flex-col items-center justify-center border-0">
+  
+  <div class="container pt-[25dvh] md:h-fit h-[100dvh] md:py-20">
+    
+    <div class="lg:w-[60%] mx-auto shadow-lg">
+      <Card class="bg-background shadow-lg text-center flex flex-col items-center justify-center border-0 py-5">
         <CardHeader>
           <CardTitle class="text-4xl md:text-5xl font-bold">
             Join The 
@@ -29,7 +31,7 @@
         </CardContent>
           
         <CardFooter>
-          <Button>
+          <Button variant="act" size="act" class="w-fit">
             <a 
               href="https://discord.com/"
               target="_blank"
@@ -45,3 +47,12 @@
   </div>
   <hr />
 </section>
+
+<style>
+  .grad {
+    background: #ffffff;
+    background: radial-gradient(circle,transparent 0%, hsl(var(--primary)) 50%, hsl(var(--primary)) 60%, transparent 100%);
+  }
+
+  
+</style>
