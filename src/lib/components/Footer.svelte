@@ -51,8 +51,7 @@
       <div class="flex flex-col gap-2">
         <h3 class="font-bold text-lg">Socials</h3>
         <div><a href="https://www.linkedin.com/company/v-relief/" class="opacity-60 hover:opacity-100">LinkedIn</a></div>
-        <div><a href="https://discord.com" class="opacity-60 hover:opacity-100">Instagram</a></div>
-        <div><a href="https://dribbble.com" class="opacity-60 hover:opacity-100">Github</a></div>
+        <div><a href="https://www.instagram.com/vrelieforg/" class="opacity-60 hover:opacity-100">Instagram</a></div>
       </div>
     </div>
 

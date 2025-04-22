@@ -8,6 +8,8 @@
   } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
   import DiscordIcon from "$lib/icons/DiscordIcon.svelte";
+  let href = "https://discord.com/invite/your-discord-invite-link"; 
+
 </script>
 
 <section id="community" class="py-0 grad border-0 flex justify-center align-middle">
@@ -31,15 +33,12 @@
         </CardContent>
           
         <CardFooter>
-          <Button variant="act" size="act" class="w-fit">
-            <a 
-              href="https://discord.com/"
-              target="_blank"
-              rel="noreferrer"
-              class="w-full h-full"
-            >
+
+          <Button variant="act" 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdjLJ5kJmiRVrsg5kd8cnBxJnCe4bSgBAcsFXWNuo2dGTlWsA/viewform?usp=header"
+          target="_blank"
+          size="act" class="w-fit">
               Apply For Beta
-            </a>
           </Button>
         </CardFooter>
       </Card>

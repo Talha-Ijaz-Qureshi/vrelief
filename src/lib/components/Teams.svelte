@@ -6,15 +6,12 @@
     CardTitle,
     CardFooter,
   } from "$lib/components/ui/card";
-  import {
-    Mail,
-
-  } from "lucide-svelte";
+  import { base } from '$app/paths';
   import Icon from "@iconify/svelte";  
   import LinkedInIcon from "$lib/icons/LinkedInIcon.svelte";
   import GithubIcon from "$lib/icons/GithubIcon.svelte";
   import Instagram from "$lib/icons/XIcon.svelte";
-
+  
   interface TeamProps {
     imageUrl: string;
     firstName: string;
@@ -30,50 +27,50 @@
 
   const teamList: TeamProps[] = [
     {
-    imageUrl: "/sala.png",
+    imageUrl: 'sala.png',
     firstName: "Saleh",
     lastName: "Khan",
     positions: ["Founder & Chief Executive Officer @ VRelief"],
     socialNetworks: [
       {
         name: "cib:linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/saleh-k/",
       },
       {
         name: "cib:instagram",
-        url: "https://x.com/leo_mirand4",
+        url: "https://www.instagram.com/saleh.xlm/",
       },
       {
         name: "tdesign:mail-filled",
-        url: "https://github.com/leoMirandaa",
+        url: "mailto:salehkhan0707@gmail.com",
       },
     ],
   },
   {
     imageUrl:
-      "/tehla.png",
+      "tehla.png",
     firstName: "Talha",
     lastName: "Ijaz",
     positions: ["Chief Technical Officer @ VRelief"],
     socialNetworks: [
       {
         name: "cib:linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/talha-ijaz-qureshi/",
       },
       {
         name: "cib:github",
-        url: "https://github.com/leoMirandaa",
+        url: "https://github.com/Talha-Ijaz-Qureshi",
       },
       {
         name: "tdesign:mail-filled",
-        url: "https://github.com/leoMirandaa",
+        url: "mailto:muhammadtalhaijaz2005@gmail.com",
       },
     ],
   },
 
   {
     imageUrl:
-      "/rish.png",
+      "rish.png",
     firstName: "Rishabh",
     lastName: "Johary",
     positions: ["Chief Operating Officer @ VRelief"],
@@ -84,11 +81,11 @@
       },
       {
         name: "cib:instagram",
-        url: "https://x.com/leo_mirand4",
+        url: "https://www.instagram.com/rish1bh00/",
       },
       {
         name: "tdesign:mail-filled",
-        url: "https://github.com/leoMirandaa",
+        url: "mailto:j.rishab2020@gmail.com",
       },
     ],
   },
@@ -190,7 +187,7 @@
               class="hover:opacity-80 transition-opacity"
               aria-label="Visit our {name} page"
             >
-            <Icon icon={name} width="24" height="24px"  style="color: #1c1c1c" />
+            <Icon icon={name} width="24" height="24px"  style="color: hsl(var(--primary))" />
             </a>
           {/each}
         </CardFooter>

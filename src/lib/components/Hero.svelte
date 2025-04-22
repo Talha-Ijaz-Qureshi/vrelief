@@ -53,21 +53,22 @@
             </p>
 
             <div class="space-y-4 md:space-y-0 md:space-x-4">
-                <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
+                <Button
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdjLJ5kJmiRVrsg5kd8cnBxJnCe4bSgBAcsFXWNuo2dGTlWsA/viewform?usp=header"
+                    target="_blank"
+                    class="w-5/6 md:w-1/4 font-bold group/arrow"
+                >
                     Beta Program
                     <ArrowRight
-                        class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
+                    class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
                     />
                 </Button>
-
-                <Button variant="secondary" class="w-5/6 md:w-1/4 font-bold">
-                    <a
-                        href="https://github.com/Zxce3/shadcn-sveltekit-landing-page.git"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Connect With Us
-                    </a>
+              
+                <Button variant="secondary" href="#contact" class="w-5/6 md:w-1/4 font-bold z-10">
+                    Connect With US
+                    <ArrowRight
+                    class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
+                    />
                 </Button>
             </div>
         </div>
