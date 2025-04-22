@@ -59,16 +59,8 @@
     
     <section>
       <h3>
-        <a
-        target="_blank"
-        href="https://github.com/leoMirandaa"
-        class="text-primary transition-all border-primary hover:border-b-2"
-        rel="noreferrer"
-      >
-        VRelief
-      </a>
 
-        &copy; 2025
+        VRelief &copy; 2025
       </h3>
     </section>
   </div>
