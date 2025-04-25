@@ -12,7 +12,8 @@
 
 </script>
 
-<section id="community" class="py-0 grad border-0 flex justify-center align-middle">
+
+<section id="community" class="py-0  dot flex justify-center align-middle ">
   <hr />
   
   <div class="container pt-[25dvh] md:h-fit h-[100dvh] md:py-20">
@@ -50,7 +51,7 @@
 <style>
   .grad {
     background: #ffffff;
-    background: radial-gradient(circle,transparent 0%, hsl(var(--primary)) 50%, hsl(var(--primary)) 60%, transparent 100%);
+    background: radial-gradient(circle,transparent 0%, transparent 10%, hsl(var(--primary)) 70%, transparent 100%);
   }
 
   

@@ -36,6 +36,16 @@
       background-color: hsl(var(--primary));
       color: hsl(0, 0%, 100%);
     }
+    .dot {
+      --dot-bg: #000000;
+      --dot-color: hsl(var(--primary));
+      --dot-size: 3px;
+      --dot-space: 17px;
+      background:
+          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+    }
   }
 
   .dark {

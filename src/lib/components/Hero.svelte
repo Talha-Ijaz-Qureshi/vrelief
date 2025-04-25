@@ -92,6 +92,7 @@
 </section>
 
 <style>
+
     .img-shadow-animation {
         animation-name: img-shadow-animation;
         animation-iteration-count: infinite;

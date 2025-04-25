@@ -144,7 +144,7 @@
 
 </script>
 
-<section id="team" class="container max-w-7xl mx-auto px-4 py-16 sm:py-24 lg:py-32">
+<section id="team" class=" container max-w-7xl mx-auto px-4 py-16 sm:py-24 lg:py-32">
   <div class="text-center mb-12">
     <h2 class="text-lg text-primary text-center mb-3 tracking-wider">Team</h2>
 
