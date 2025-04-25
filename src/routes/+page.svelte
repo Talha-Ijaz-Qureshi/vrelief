@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import Benefits from "$lib/components/Benefits.svelte";
     import Community from "$lib/components/Community.svelte";
     import JobsApply from "$lib/components/JobsApply.svelte";
@@ -11,17 +12,17 @@
     import HowItWorks from "$lib/components/HowItWorks.svelte";
     import Navbar from "$lib/components/Navbar.svelte";
     // import Pricing from "$lib/components/Pricing.svelte";
-    import Services from "$lib/components/Services.svelte";
+    // import Services from "$lib/components/Services.svelte";
     // import Sponsors from "$lib/components/Sponsors.svelte";
     import Teams from "$lib/components/Teams.svelte";
     import Testimonials from "$lib/components/Testimonials.svelte";
 </script>
 
 <svelte:head>
-    <link rel="preload" as="image" href="/vrdark.png" />
-    <link rel="preload" as="image" href="/vrlight.png" />
-    <link rel="preload" as="image" href="/dr4.png" />
-    <link rel="preload" as="image" href="/dr5.png" />
+    <link rel="preload" as="image" href="{base}/vrdark.png" />
+    <link rel="preload" as="image" href="{base}/vrlight.png" />
+    <link rel="preload" as="image" href="{base}/dr4.png" />
+    <link rel="preload" as="image" href="{base}/dr5.png" />
 </svelte:head>
 
 <Navbar />
@@ -29,7 +30,7 @@
 <!-- <Sponsors /> -->
 <Benefits />
 <Features />
-<Services />
+<!-- <Services /> -->
 <HowItWorks />
 <!-- <Testimonials /> -->
 <!-- <Timeline /> -->
