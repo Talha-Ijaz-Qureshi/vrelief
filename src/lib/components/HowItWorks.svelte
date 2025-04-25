@@ -14,26 +14,26 @@
     {
       badgeTitle: "Sign Up",
       title: "Being your VR Therapy Journey",
-      description: "Take your first step towards a whole new experience of healing, create a VRelief account with us.",
-      image: "mdi:account-plus-outline",
+      description: "Take your first step towards a whole new experience of healing by creating your VRelief account.",
+      image: "hugeicons:health",
     },
     {
       badgeTitle: "Personalize",
       title: "Finding Your Path",
       description: "Answer a short questionnaire to identify your mental health needs, allowing us to tailor your experience.",
-      image: "game-icons:trail",
+      image: "icon-park-twotone:health",
     },
     {
       badgeTitle: "Prepare",
       title: "Set Up Your VR Experience",
       description: "Grab a low-cost VR box (like Google Cardboard) from retailers like Noon.com, download the VRelief app, and follow easy setup instructions.",
-      image: "game-icons:vr-headset",
+      image: "streamline:vr-headset-1",
     },
     {
       badgeTitle: "Engage",
       title: "Dive into Your VR Therapy",
       description: "Choose from the modules curated by us for you, and immerse yourself in a world of healing.",
-      image: "healthicons:mental-health-outline-24px",
+      image: "healthicons:resilient-and-migration-sensitive-health-system-outline-24px",
     },    
     {
       badgeTitle: "Grow",
