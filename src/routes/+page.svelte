@@ -17,6 +17,13 @@
     import Testimonials from "$lib/components/Testimonials.svelte";
 </script>
 
+<svelte:head>
+    <link rel="preload" as="image" href="/vrdark.png" />
+    <link rel="preload" as="image" href="/vrlight.png" />
+    <link rel="preload" as="image" href="/dr4.png" />
+    <link rel="preload" as="image" href="/dr5.png" />
+</svelte:head>
+
 <Navbar />
 <Hero />
 <!-- <Sponsors /> -->
