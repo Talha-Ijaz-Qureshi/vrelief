@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import {
     Accordion,
     AccordionContent,
@@ -20,15 +21,12 @@
     },
     {
       question: "Who can benefit from VRelief’s VR therapy?",
-      answer:
-        "VRelief targets adults and adolescents dealing with ADHD, PTSD, or aviophobia, conditions affecting over 400 million people globally. Whether you’re a veteran processing trauma, someone struggling with focus, or anxious about flying, our tailored scenarios aim to provide accessible relief. We plan to expand to other disorders like anxiety and depression in the future.",
+      answer: "VRelief targets adults and adolescents dealing with ADHD, PTSD, or aviophobia, conditions affecting over 400 million people globally. Whether you’re a veteran processing trauma, someone struggling with focus, or anxious about flying, our tailored scenarios aim to provide accessible relief. We plan to expand to other disorders like anxiety and depression in the future.",
       value: "item-2",
     },
     {
-      question:
-        "Is VR therapy effective, and is it backed by science?",
-      answer:
-        "Yes, VR therapy is clinically validated for mental health treatment. Studies show it reduces PTSD symptoms by up to 75%, fear of heights by 68%, and improves self-compassion in depression by 25%. VRelief’s scenarios are designed with mental health experts to ensure clinical precision, and our beta testing will further validate effectiveness.",
+      question: "Is VR therapy effective, and is it backed by science?",
+      answer: "Yes, VR therapy is clinically validated for mental health treatment. Studies show it reduces PTSD symptoms by up to 75%, fear of heights by 68%, and improves self-compassion in depression by 25%. VRelief’s scenarios are designed with mental health experts to ensure clinical precision, and our beta testing will further validate effectiveness.",
       value: "item-3",
     },
     {
@@ -37,26 +35,52 @@
       value: "item-4",
     },
     {
-      question:
-        "What’s next for VRelief after the beta phase?",
+      question: "What’s next for VRelief after the beta phase?",
       answer: "Post-beta, we’ll refine our scenarios based on user feedback and launch a freemium app with basic and premium features. We’re also exploring AI and biofeedback integration to enhance therapy outcomes by 15% and plan to partner with therapists and clinics for broader reach. Long-term, we aim to address more disorders like depression and anxiety.",
       value: "item-5",
     },
   ];
+
+  // current open accordion item
+  let openItem: string | undefined = undefined;
+
+  onMount(() => {
+    // Observe each trigger heading to auto-expand when in view
+    const triggers = document.querySelectorAll<HTMLElement>('.accordion-trigger');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.getAttribute('data-value');
+          if (entry.isIntersecting && id) {
+            openItem = id;
+          }
+        });
+      },
+      {
+        root: null,
+        // Adjust margins: triggers when heading is around mid viewport
+        rootMargin: '-40% 0px -60% 0px',
+        threshold: 0,
+      }
+    );
+
+    triggers.forEach((trigger) => observer.observe(trigger));
+    return () => observer.disconnect();
+  });
 </script>
 
 <section id="faq" class="container md:w-[700px] py-24 sm:py-32">
   <div class="text-center mb-8">
-    <h2 class="text-lg text-primary text-center mb-2 tracking-wider">FAQS</h2>
-    <h2 class="text-3xl md:text-4xl text-center font-bold">
-      Common Questions
-    </h2>
+    <h2 class="text-lg text-primary mb-2 tracking-wider">FAQS</h2>
+    <h2 class="text-3xl md:text-4xl font-bold">Common Questions</h2>
   </div>
 
-  <Accordion type="single" class="w-full">
+  <!-- Controlled Accordion binds its open value -->
+  <Accordion type="single" bind:value={openItem} class="w-full">
     {#each FAQList as { question, answer, value }}
-      <AccordionItem {value}>
-        <AccordionTrigger class="text-left">
+      <AccordionItem value={value}>
+        <!-- data-value used by IntersectionObserver -->
+        <AccordionTrigger data-value={value} class="accordion-trigger text-left">
           {question}
         </AccordionTrigger>
         <AccordionContent>
@@ -68,8 +92,6 @@
 
   <h3 class="font-medium mt-4">
     Still have questions?
-    <a href="#contact" class="text-muted-foreground">
-      <span class="underline">Contact us</span>
-    </a>
+    <a href="#contact" class="text-muted-foreground underline">Contact us</a>
   </h3>
 </section>

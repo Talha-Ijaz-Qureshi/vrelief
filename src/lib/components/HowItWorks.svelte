@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Card, CardContent, CardHeader, CardTitle } from "$lib/components/ui/card";
   import { Badge } from "$lib/components/ui/badge";
+  import Icon from "@iconify/svelte";  
 
   interface HowItWorksProps {
     badgeTitle: string;
@@ -11,51 +12,53 @@
 
   const HowItWorksList: HowItWorksProps[] = [
     {
-      badgeTitle: "Contribute",
-      title: "Make a Difference with Every Contribution",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-      image: "roboto.png",
+      badgeTitle: "Sign Up",
+      title: "Being your VR Therapy Journey",
+      description: "Take your first step towards a whole new experience of healing, create a VRelief account with us.",
+      image: "mdi:account-plus-outline",
     },
     {
-      badgeTitle: "Discover",
-      title: "Create an Impact with Every Choice",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
-      image: "runner.png",
+      badgeTitle: "Personalize",
+      title: "Finding Your Path",
+      description: "Answer a short questionnaire to identify your mental health needs, allowing us to tailor your experience.",
+      image: "game-icons:trail",
     },
     {
-      badgeTitle: "Innovate",
-      title: "Make Every Action Count",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
-      image: "pacheco.png",
+      badgeTitle: "Prepare",
+      title: "Set Up Your VR Experience",
+      description: "Grab a low-cost VR box (like Google Cardboard) from retailers like Noon.com, download the VRelief app, and follow easy setup instructions.",
+      image: "game-icons:vr-headset",
     },
     {
-      badgeTitle: "Collaborate",
-      title: "Tackle this challenge together",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-      image: "gamestation.png",
+      badgeTitle: "Engage",
+      title: "Dive into Your VR Therapy",
+      description: "Choose from the modules curated by us for you, and immerse yourself in a world of healing.",
+      image: "healthicons:mental-health-outline-24px",
+    },    
+    {
+      badgeTitle: "Grow",
+      title: "Track Your Progress",
+      description: "See your journey unfold with insights and support. Expect tools to celebrate your progress and resources to keep you inspired.",
+      image: "lets-icons:time-progress-duotone",
     },
   ];
-</script>
+  </script>
 
 <section id="features" class="container py-24 sm:py-32">
   <div class="text-center mb-8">
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-      How It Works
+      User Experience
     </h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold">
-      Step-by-Step Process
+      Your VRelief Journey
     </h2>
   </div>
 
-  <div class="lg:w-[80%] mx-auto relative">
+  <div class="lg:w-[60%] mx-auto relative">
     {#each HowItWorksList as { badgeTitle, title, description, image }, index}
-      <div class="flex mb-8 items-center" class:flex-row-reverse={index % 2 !== 0}>
-        <Card class="h-full bg-transparent border-0 shadow-none">
+      <div class="flex mb-12 items-center " class:flex-row-reverse={index % 2 !== 0}>
+        <Card class="h-full bg-transparent border-0 shadow-none flex flex-col items-start {index % 2 !== 0 ? 'items-end' : ''}">
           <CardHeader>
             <div class="pb-4">
               <Badge>{badgeTitle}</Badge>
@@ -66,17 +69,20 @@
             </CardTitle>
           </CardHeader>
 
-          <CardContent class="text-muted-foreground w-[80%]">
+          <CardContent class="text-muted-foreground w-[100%]">
             {description}
           </CardContent>
         </Card>
 
-        <img
+        <!-- <img
           src={image}
           alt="Image describing {title}"
           class="w-[150px] md:w-[250px] lg:w-[300px] mx-auto -scale-x-100"
-        />
-        
+        /> -->
+        <div class=" p-10 rounded-full ring-8 ring-primary/10 mb-4 w-[300px] md:w-[200px] lg:w-[200px] mx-auto -scale-x-100">
+          <Icon icon={image} width="100%" height="100%" class="mx-0" style="color: hsl(var(--primary))" />
+        </div>
+
         <div
           class="-z-10 absolute right-0 w-44 h-72 lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl"
           class:left-0={index % 2 !== 0}
