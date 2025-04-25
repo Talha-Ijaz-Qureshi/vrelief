@@ -103,7 +103,12 @@
     </div>
 
     <!-- Form -->
-    <Card class="bg-muted/60 dark:bg-card">
+    <Card class="bg-muted/60 dark:bg-card relative overflow-hidden">
+      <div
+      class="z-10 h-full w-full absolute top-50% bg-primary/5 dark:bg-primary/10 blur-xl border rounded-full"
+      ></div>
+
+
       <CardHeader class="text-primary text-2xl" />
       <CardContent>
         <form on:submit={handleSubmit} class="grid gap-4">
@@ -111,6 +116,7 @@
             <div class="flex flex-col w-full gap-1.5">
               <Label for="firstName">First Name</Label>
               <Input
+                class="z-10"
                 id="firstName"
                 type="text"
                 placeholder=""
@@ -121,6 +127,7 @@
             <div class="flex flex-col w-full gap-1.5">
               <Label for="lastName">Last Name</Label>
               <Input
+                class="z-10"
                 id="lastName"
                 type="text"
                 placeholder=""
@@ -132,6 +139,8 @@
           <div class="flex flex-col gap-1.5">
             <Label for="contactEmail">Email</Label>
             <Input
+
+              class="z-10"
               id="contactEmail"
               type="email"
               placeholder="your@email.com"
@@ -141,6 +150,7 @@
           <div class="flex flex-col gap-1.5">
             <Label for="contactSubject">Subject</Label>
             <Input
+              class="z-10"
               id="contactSubject"
               type="text"
               placeholder="Your subject..."
@@ -169,6 +179,7 @@
           <div class="flex flex-col gap-1.5">
             <Label for="contactMessage">Message</Label>
             <Textarea
+            class="z-10"
               id="contactMessage"
               placeholder="Your message..."
               rows={5}
@@ -186,7 +197,7 @@
             </Alert>
           {/if}
 
-          <Button type="submit" class="mt-4">Send message</Button>
+          <Button type="submit" class="mt-4 z-10">Send message</Button>
         </form>
       </CardContent>
       <CardFooter />

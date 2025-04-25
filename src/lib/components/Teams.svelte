@@ -156,8 +156,9 @@
 
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 justify-center items-center">
     {#each teamList as { imageUrl, firstName, lastName, positions, socialNetworks }}
-      <Card class="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg">
-        <CardHeader class="p-0 gap-0">
+      <Card class="relative bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg">
+
+        <CardHeader class="z-10 p-0 gap-0">
           <div class="h-full overflow-hidden">
             <img
               src={imageUrl}
@@ -171,7 +172,7 @@
           </CardTitle>
         </CardHeader>
 
-        <div class="px-4 sm:px-6 flex-grow">
+        <div class="z-10 px-4 sm:px-6 flex-grow">
           {#each positions as position, index}
             <CardContent class="p-0 pb-2 text-muted-foreground">
               {position}{#if index < positions.length - 1},{/if}
@@ -179,7 +180,7 @@
           {/each}
         </div>
 
-        <CardFooter class="space-x-4 px-4 sm:px-6 py-4">
+        <CardFooter class="z-10 space-x-4 px-4 sm:px-6 py-4">
           {#each socialNetworks as { name, url }}
             <a
               href={url}
@@ -191,6 +192,10 @@
             </a>
           {/each}
         </CardFooter>
+        <div
+        class="z-0 h-full w-full absolute top-50% bg-primary/5 dark:bg-primary/10 blur-xl border rounded-full"
+        ></div>
+
       </Card>
     {/each}
   </div>

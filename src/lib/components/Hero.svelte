@@ -19,6 +19,10 @@
     <div
         class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
+    <div
+    class="-z-10 h-[100%] w-[100%] absolute top-[0%] right-50% bg-primary/5 dark:bg-primary/10 blur-3xl border rounded-full"
+    ></div>
+
         <div class="text-center space-y-8">
             <!-- <Badge variant="outline" class="text-sm py-2">
                 <span class="mr-2 text-primary">

@@ -67,7 +67,10 @@
 
     <div class="grid lg:grid-cols-2 gap-4 w-full">
       {#each benefitList as { icon, title, description }, index}
-        <Card class="bg-muted/50 dark:bg-card hover:bg-background dark:hover:bg-background transition-all delay-75 group/number">
+        <Card class="bg-muted/50 overflow-hidden relative dark:bg-card hover:bg-background dark:hover:bg-background transition-all delay-75 group/number">
+          <div
+          class="z-10 h-full w-full absolute top-50% bg-primary/5 dark:bg-primary/10 blur-2xl border rounded-full"
+          ></div>
           <CardHeader>
             <div class="flex justify-between">
               <svelte:component 

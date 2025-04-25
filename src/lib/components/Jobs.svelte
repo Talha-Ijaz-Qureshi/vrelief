@@ -61,9 +61,12 @@
   
   <section id="features" class="container py-2 sm:py-10 px-0">
   
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-full lg:w-[100%] mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 w-full lg:w-[100%] px-1 mx-auto">
       {#each featureList as { icon, url,  title, description }}
         <Card class=" p-4 relative rounded-lg border shadow-sm bg-muted/60 dark:bg-card flex justify-start flex-col h-full py-4 overflow-hidden">
+          <div
+          class="z-0 h-full w-full absolute top-50% bg-primary/5 dark:bg-primary/10 blur-xl border rounded-full"
+          ></div>
           <Icon icon={icon} width="50" height="50" class="mx-2" style="color: hsl(var(--primary))" />
             <CardTitle class="text-left pt-4 px-3">{title}</CardTitle>  
 
@@ -77,7 +80,7 @@
           <a 
           href={url}
           target="_blank"
-          class="inline-flex items-center justify-end w-fit h-fit mt-auto ml-auto p-2 rounded-lg bg-blacks bg-none underline underline-offset-2"
+          class="z-10 inline-flex items-center justify-end w-fit h-fit mt-auto ml-auto p-2 rounded-lg bg-blacks bg-none underline underline-offset-2 hover:underline-offset-4"
         >
           Apply
           <ArrowRight
