@@ -26,7 +26,7 @@
     {
       badgeTitle: "Prepare",
       title: "Set Up Your VR Experience",
-      description: "Grab a low-cost VR box (like Google Cardboard) from retailers like Noon.com, download the VRelief app, and follow easy setup instructions.",
+      description: "Grab a VR box (like Google Cardboard) compatible with your smartphone's size, download the VRelief app, and follow easy setup instructions.",
       image: "streamline:vr-headset-1",
     },
     {
