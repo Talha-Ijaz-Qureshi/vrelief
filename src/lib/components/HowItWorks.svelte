@@ -20,7 +20,7 @@
     {
       badgeTitle: "Personalize",
       title: "Finding Your Path",
-      description: "Answer a short questionnaire to identify your mental health needs, allowing us to tailor your experience.",
+      description: "Fill up our questionnare to identify your mental health needs or upload your medical diagnosis, allowing us to tailor your experience.",
       image: "icon-park-twotone:health",
     },
     {
