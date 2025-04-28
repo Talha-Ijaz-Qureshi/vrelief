@@ -51,7 +51,7 @@
       "tehla.png",
     firstName: "Talha",
     lastName: "Ijaz",
-    positions: ["Chief Technical Officer @ VRelief"],
+    positions: ["Co-founder & Chief Technical Officer @ VRelief"],
     socialNetworks: [
       {
         name: "cib:linkedin",
@@ -73,7 +73,7 @@
       "rish.png",
     firstName: "Rishabh",
     lastName: "Johary",
-    positions: ["Chief Operating Officer @ VRelief"],
+    positions: ["Co-founder & Chief Operating Officer @ VRelief"],
     socialNetworks: [
       {
         name: "cib:linkedin",
