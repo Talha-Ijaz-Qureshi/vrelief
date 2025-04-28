@@ -2,7 +2,7 @@ export const siteConfig = {
     name: " VRelief",
     description: "We bring together compassionate care and science-driven methods through immersive and condition-curated virtual sessions that support your mind, body, and emotional well-being.",
     url: "https://vrelief.org",
-    ogImage: "vrelief.png",
+    ogImage: "/vrdark.png",
     links: {
         linkedin: "https://www.linkedin.com/company/vrelief",
         instagram: "https://www.instagram.com/vrelieforg",
